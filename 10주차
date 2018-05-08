@@ -75,3 +75,14 @@ pull과 fetch의 차이점
 - Merge작업까지 수행하고 안하고
 
 
+
+브랜치
+
+작업을 분기로 저장할 수 있는 것.
+동일한 소스코드(master)를 복사하여 독립적으로 작업할 수 있게 하는 것이 branch이다.
+후 Branch로 작업한 작업물들은 merge과정을 통해 통합이 가능하다.
+
+git checkout -b [branch이름]
+branch 생성과 함께 이동도 동시 수행하는 팁
+
+
