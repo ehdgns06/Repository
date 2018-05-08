@@ -1,4 +1,4 @@
 Hi, I'm master branch
-blabla
-Hi I'm secondBranch
-blabla
+
+Hi I'm secondBranch // SecondBranch
+
