@@ -1,0 +1,77 @@
+버전 관리
+
+- 개념		
+- 왜 사용하는가 	( 3가지 )
+- 사용 용어	저장소 Repository
+		가져오기 Import
+		체크아웃 check out
+		체크인 	check in or commit
+
+* 충돌	Conflict
+
+
+CVS
+
+-R : recursive
+	경로와 그 하위까지 모두 바꿈
+
+
+GIT
+장점 : 변경사항만 저장한다. 백업속도가 빠르다. 
+단점 : 파일명이 아스키코드외 유니코드(ex 한글)은 몇몇 지원이 되지 않는다.
+
+
+- 특징
+해시값 ( 암호화와 관련된 것 )
+- 델타와 스냅샷
+GIT은 델타가 아니 스냅샷으로 저장됨.
+
+델타	장점 - 변경내역 저장이 빠르다.
+	단점 - 결국 원본이 있어야 하며 그 변화값을 모두 더해야 완성된 버전의 파일이 만들어진다. 	=>완성된 버전이 만들어지기까지의 속도가 느리다.
+
+
+스냅샷	
+	장점 - 완성된 버전까지의 속도가 빠르다.
+	단점 - ...?
+
+
+버전관리	- 중앙집중식 버전 관리 시스템
+		: 하나의 중앙서버와 다수의 클라이언트
+		but 서버가 다운되면 버전관리가 불가능
+		(보존성이 위험하다.) check out.(단방향)
+		
+		- 분산 버전 관리 시스템
+		: 클라이언트가 마지막 스냅샷을 가져오는 대신 저장소를 통째로 복제
+		: 언제든지 서버 복구 가능 (양방향)
+
+
+
+파일관리 용어
+Commited
+Modified
+Staged
+
+
+Working Directory
+Staging Area
+Git Directory
+
+
+working directory에서 c파일 h파일 만듬
+stating area로 올림 <- git add
+git commit <- git commit -m "init" 
+* -m은 습관화하자.
+
+현재까지 자기자체디렉토리
+
+
+push pull => git directory로 올릴 수 있음.
+(git directory)
+
+
+push와 pull의 차이점
+- 보내고 가져오고
+pull과 fetch의 차이점
+- Merge작업까지 수행하고 안하고
+
+
